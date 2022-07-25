@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%-- <%=request.getAttribute("result") %>입니다.<br> --%>
-	<!-- servlet에서 보낸 result 출력  -->
-	${result}입니다.
+	<!-- servlet에서 보낸 result(model) 출력  -->
+	<p>결과 : ${result}입니다.
 </body>
 </html>
