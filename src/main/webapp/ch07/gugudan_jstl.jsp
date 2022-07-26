@@ -10,13 +10,23 @@
 <body>
 	<h3>구구단 출력</h3>
 	<table>
+		<!-- EL 언어 -->
 		<c:forEach var="i" begin="1" end="9">
 		<tr>
 			<c:forEach var="j" begin="2" end="9">
-				<td width="100">${j} x ${i} = ${i*j}</td>
+				<td width="100%">${j} x ${i} = ${i*j}</td>
 			</c:forEach>
 		</tr>
 		</c:forEach>
+		
+		<!-- 스크립틀릿 -->
+		
 	</table>
 </body>
 </html>
+
+
+
+
+
+
