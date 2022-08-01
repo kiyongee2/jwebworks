@@ -14,7 +14,7 @@
 		<c:forEach var="i" begin="1" end="9">
 		<tr>
 			<c:forEach var="j" begin="2" end="9">
-				<td width="100%">${j} x ${i} = ${i*j}</td>
+				<td width="100">${j} x ${i} = ${i*j}</td>
 			</c:forEach>
 		</tr>
 		</c:forEach>

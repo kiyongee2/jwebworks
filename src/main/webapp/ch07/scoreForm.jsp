@@ -8,9 +8,20 @@
 </head>
 <body>
 	<h2>점수를 입력해 주세요</h2>
-	<form action="scoreTest.jsp" method="get">
-		<p>숫자: <input type="text" name="score">
-		      <input type="submit" value="학점출력"></p>
+	<form action="scoreTest.jsp" method="get" name="scoreForm">
+		<p>숫자: <input type="text" name="score" id="score">
+		      <input type="button" value="학점출력" onclick="checkScore()"></p>
 	</form>
+	<script type="text/javascript">
+		function checkScore(){
+			let form = document.scoreForm
+			if(form.score.value == ""){
+				alert("숫자를 입력해주세요");
+				form.score.focus();
+				return false;
+			}
+			form.submit();
+		}
+	</script>
 </body>
 </html>

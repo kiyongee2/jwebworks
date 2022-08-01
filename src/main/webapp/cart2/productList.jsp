@@ -17,13 +17,9 @@
 		<hr>
 		<form action="./selProduct.jsp" method="get">
 			<select name="select">
-			<%-- <%
-				for(String item : product.getProductList()){
-					out.println("<option>" + item + "</option>");
-				}
-			%> --%>
 			<c:forEach var="product" items="${product.productList }">
-				<option>${product}</option>
+				<%-- <option>${product}</option> --%>
+				<option><c:out value="${product}" /></option>
 			</c:forEach>
 			</select>
 			<input type="submit" value="선택">
