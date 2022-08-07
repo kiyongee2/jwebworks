@@ -39,13 +39,13 @@ public class LogFileFilter implements Filter{
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
 		
-		String clientAddr = request.getRemoteAddr();
+		String clientAddr = request.getRemoteAddr();        //IP 주소
 		writer.printf("클라이언트 IP 주소: %s %n", clientAddr);
 		
-		String contentType = response.getContentType();
+		String contentType = response.getContentType();     //컨텐츠 유형
 		writer.printf("문서의 컨텐츠 유형: %s %n", contentType);
 		
-		writer.printf("현재 일시: %s %n ", getCurrentTime());
+		writer.printf("현재 일시: %s %n ", getCurrentTime()); //현재 날짜와 시간(메소드 호출)
 		
 		chain.doFilter(request, response); //필터 실행
 	}
