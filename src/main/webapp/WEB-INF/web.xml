@@ -16,11 +16,6 @@
   	</auth-constraint>
   </security-constraint>
   
-  <!-- 기본 인증 방법 -->
-  <!-- <login-config>
-  	<auth-method>BASIC</auth-method>
-  </login-config> -->
-  
   <!-- 폼 기반 인증 -->
   <login-config>
   	<auth-method>FORM</auth-method>
@@ -86,6 +81,11 @@
   	<servlet-name>calcServlet</servlet-name>
   	<url-pattern>/mvc/calc</url-pattern>
   </servlet-mapping>
+  
+  <error-page>
+  	<error-code>404</error-code>
+  	<location>/exceptionNoPage.jsp</location>
+  </error-page>
   
    <display-name>jweb</display-name>
    <welcome-file-list>

@@ -15,6 +15,7 @@
 	String username = "root";
 	String password = "12345";
 	
+	//url에 오류 있는 경우 - jspdb?useUnicode=true&serverTimezone=Asia/Seoul";
 	Connection conn = null;
 	
 	try{
